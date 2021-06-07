@@ -208,10 +208,10 @@ public final class SelfDependencyPatcher {
 
     private static String jfxUrl(String component, String version) {
         // https://repo1.maven.org/maven2/org/openjfx/javafx-%s/%s/javafx-%s-%s-%s.jar
-        return String.format("https://maven.aliyun.com/repository/central/org/openjfx/javafx-%s/%s/javafx-%s-%s-%s.jar",
-                component, version, component, version, getMvnName());
-//        return String.format("https://bmclapi.bangbang93.com/maven/org/openjfx/javafx-%s/%s/javafx-%s-%s-%s.jar",
-//                component, version, component, version, getMvnName());
+//         return String.format("https://maven.aliyun.com/repository/central/org/openjfx/javafx-%s/%s/javafx-%s-%s-%s.jar",
+//                 component, version, component, version, getMvnName());
+       return String.format("https://bmclapi.bangbang93.com/maven/org/openjfx/javafx-%s/%s/javafx-%s-%s-%s.jar",
+               component, version, component, version, getMvnName());
     }
 
     private static String getMvnName() {
